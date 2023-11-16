@@ -1,0 +1,51 @@
+Orig:
+oscap xccdf eval --profile stig-rhel8-disa --results results.xml --report report.html U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark.xml
+
+try 1:
+oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_stig --results results.xml --report report.html U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark.xml
+
+try 2:
+oscap xccdf eval --profile xccdf_mil.disa.stig_profile_CAT_I_Only --results results.xml --report report.html U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark.xml
+
+
+1-2_Benchmark.xml"4-16]:[/opt/scap/SCAP] # oscap info "U_RHEL_8_V1R11_STIG_SCAP_1
+Document type: Source Data Stream
+Imported: 2023-09-27T15:54:11
+
+Stream: scap_mil.disa.stig_datastream_U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark
+Generated: 2023-09-27T11:54:10
+Version: 1.2
+Checklists:
+        Ref-Id: scap_mil.disa.stig_cref_U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark-xccdf.xml
+                Status: accepted
+                Generated: 2023-09-11
+                Resolved: false
+                Profiles:
+                        Title: I - Mission Critical Classified
+                                Id: xccdf_mil.disa.stig_profile_MAC-1_Classified
+                        Title: I - Mission Critical Public
+                                Id: xccdf_mil.disa.stig_profile_MAC-1_Public
+                        Title: I - Mission Critical Sensitive
+                                Id: xccdf_mil.disa.stig_profile_MAC-1_Sensitive
+                        Title: II - Mission Support Classified
+                                Id: xccdf_mil.disa.stig_profile_MAC-2_Classified
+                        Title: II - Mission Support Public
+                                Id: xccdf_mil.disa.stig_profile_MAC-2_Public
+                        Title: II - Mission Support Sensitive
+                                Id: xccdf_mil.disa.stig_profile_MAC-2_Sensitive
+                        Title: III - Administrative Classified
+                                Id: xccdf_mil.disa.stig_profile_MAC-3_Classified
+                        Title: III - Administrative Public
+                                Id: xccdf_mil.disa.stig_profile_MAC-3_Public
+                        Title: III - Administrative Sensitive
+                                Id: xccdf_mil.disa.stig_profile_MAC-3_Sensitive
+                        Title: CAT I Only
+                                Id: xccdf_mil.disa.stig_profile_CAT_I_Only
+                Referenced check files:
+                        U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark-oval.xml
+                                system: http://oval.mitre.org/XMLSchema/oval-definitions-5
+Checks:
+        Ref-Id: scap_mil.disa.stig_cref_U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark-oval.xml
+        Ref-Id: scap_mil.disa.stig_cref_U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark-cpe-oval.xml
+Dictionaries:
+        Ref-Id: scap_mil.disa.stig_cref_U_RHEL_8_V1R11_STIG_SCAP_1-2_Benchmark-cpe-dictionary.xml
